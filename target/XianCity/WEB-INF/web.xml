@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!--初始化页面-->
+  <servlet>
+    <servlet-name>HelloXian</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Index_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloXian</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <!--JSP基础知识页面-->
+  <servlet>
+    <servlet-name>JspBase</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Servlet_Base_Script</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JspBase</servlet-name>
+    <url-pattern>/JspBase</url-pattern>
+  </servlet-mapping>
+  <!--JSP动作指令-->
+  <servlet>
+    <servlet-name>JspAction</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Servlet_Jsp_Action</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JspAction</servlet-name>
+    <url-pattern>/JspAction</url-pattern>
+  </servlet-mapping>
+  <!--JSP内置对象-->
+  <servlet>
+    <servlet-name>JspObject</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Servlet_Jsp_Object</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JspObject</servlet-name>
+    <url-pattern>/JspObject</url-pattern>
+  </servlet-mapping>
+  <!--JSPJavaBean实例-->
+  <servlet>
+    <servlet-name>JspJavaBean</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Servlet_Jsp_JavaBean</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JspJavaBean</servlet-name>
+    <url-pattern>/JspJavaBean</url-pattern>
+  </servlet-mapping>
+  <!--JSP数据库使用-->
+  <servlet>
+    <servlet-name>JspSql</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Servlet_Jsp_Sql</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JspSql</servlet-name>
+    <url-pattern>/JspSql</url-pattern>
+  </servlet-mapping>
+  <!--JSP中EL-->
+  <servlet>
+    <servlet-name>JspEl</servlet-name>
+    <servlet-class>org.qfnu.amao.controller.Servlet_Jsp_El</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JspEl</servlet-name>
+    <url-pattern>/JspEl</url-pattern>
+  </servlet-mapping>
+</web-app>
